@@ -1,5 +1,5 @@
 body {
-    color:white;
+    color:rgb(81, 89, 50);
     height: 100%;
     overflow: hidden;
 
@@ -8,10 +8,12 @@ body {
     text-align: center;
     position: relative;
     z-index: 2422;
+    color:rgb(191, 129, 106);
 }
 #tag {
     font-size: x-large;
     font-weight: bold;
+    color:rgb(191, 129, 106);
 }
 
 #links{
@@ -24,10 +26,10 @@ body {
 
 .link{
         backdrop-filter: blur(5px);
-        background-color: rgba(0, 0, 0, 0.233);
+        background-color: rgba(3, 3, 3, 0.089);
         z-index: 9;
         display: block;
-        color: rgb(255, 255, 255);
+        color: rgba(24, 23, 23, 0.26);
         font-family: var(--font);
         text-align: center;
         margin-bottom: 15px;
@@ -41,16 +43,45 @@ body {
 
 .link:hover{
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.199);
+    background-color: rgba(61, 62, 64);
     color: white;
 }
 
 
 
-#bgvid {
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+    width: 10%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  } 
+
